@@ -9,8 +9,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import Snackbar from '@mui/material/Snackbar';
-import MuiAlert from '@mui/material/Alert';
+
 import OrderDeatail from './OrderDeatail';
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -57,7 +56,7 @@ const columns = [
     align: "center",
   },
   {
-    id: "orderd_item",
+    id: "saler_item",
     label: "Ordered Item",
     minWidth: 120,
     align: "center",
@@ -68,12 +67,12 @@ const columns = [
     minWidth: 80,
     align: "center",
   },
-  {
-    id: "order_detail",
-    label: "Order Detail",
-    minWidth: 170,
-    align:'center'
-  },
+  // {
+  //   id: "order_detail",
+  //   label: "Order Detail",
+  //   minWidth: 170,
+  //   align:'center'
+  // },
   // {
   //   id: "block",
   //   label: "Block Customer",
@@ -82,9 +81,9 @@ const columns = [
   //   // format: (value) => value.toFixed(2),
   // },
 ];
-function createData(Salers_id, Salers_name, location, email_id, orderd_item, bill, order_detail) {
+function createData(Salers_id, Salers_name, location, email_id, saler_item, bill) {
 //   const orderd_item = location / email_id;
-  return { Salers_id, Salers_name, location, email_id, orderd_item,bill,order_detail};
+  return { Salers_id, Salers_name, location, email_id, saler_item,bill};
 }
 
 
@@ -116,35 +115,28 @@ const { vertical, horizontal } = state;
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-  const order_detail = (
-    <Button variant="contained" onClick={handleOpen} size="small" style={{background:"green"}}>Saler Detail</Button>
-  )
-// const block_button =( <Button
-//          onClick={handleClick({
-//        vertical: 'top',
-//           horizontal: 'center',
-//         })}
-//         variant="contained"
-//         size='small'
-//          className="reject_button" >Block</Button>)
+  // const order_detail = (
+  //   <Button variant="contained" onClick={handleOpen} size="small" style={{background:"green"}}>Saler Detail</Button>
+  // )
+
 const rows = [
-    createData('01475', 'Joe', 'street 21', 'ali@gmail.com', 'sandwich', 46, order_detail),
-    createData('02351', 'Max Marsh', 'Hall Street', 'max@gmail.como','Noodles', 56, order_detail ),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail
+    createData('01475', 'Joe', 'street 21', 'ali@gmail.com', 'sandwich', 46),
+    createData('02351', 'Max Marsh', 'Hall Street', 'max@gmail.como','Noodles', 56 ),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49
     ),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49
     ),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail ),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
-    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49, order_detail),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49 ),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
+    createData('12123', 'Herry Fries', 'JK Road', 'herry@gmail.com','Burger', 49),
 ];
 
 
@@ -216,21 +208,7 @@ const rows = [
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Paper>
-       {/* <Snackbar
-        anchorOrigin={{ vertical, horizontal }}
-        open={open}
-        onClose={handleClose}
-        // message="Do you want to reject this Order?"
-        key={vertical + horizontal}
-      > */}
-      {/* <Alert onClose={handleClose} severity="warning" sx={{ width: '100%' }}>
-    Do you want to Block this Customer?
-    <div style={{display:'flex', justifyContent:'space-between', marginTop:'10px'}}> 
-        <Button variant="contained" size='small' style={{background:'#ffff', color:'black'}} >Yes</Button>
-        <Button variant="contained" size='small' style={{background:'#ffff', color:'black'}}>No</Button>
-         </div>
-  </Alert> */}
-      {/* </Snackbar> */}
+ 
     </div>
   );
 };

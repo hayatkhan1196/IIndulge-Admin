@@ -4,7 +4,6 @@ import Divider from "@mui/material/Divider";
 import TextField from "@mui/material/TextField";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
-import InputLabel from "@mui/material/InputLabel";
 import Grid from "@mui/material/Grid";
 import Button from '@mui/material/Button';
 import SaveIcon from '@mui/icons-material/Save';
@@ -130,7 +129,7 @@ const AddProduct = () => {
                 />
               </Grid>
               <Grid item xs={7} style={{ textAlign: "center" }}>
-                <img src={_image} style={{ width: "100px" }} />
+                <img src={_image} style={{ width: "100px" }} alt="image"/>
               </Grid>
             </Grid>
           </div>

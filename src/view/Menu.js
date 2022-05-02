@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/menu.scss";
-import Categories, { categoryList } from "../component/Categories";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import Categories from "../component/Categories";
+// import Grid from "@mui/material/Grid";
+// import Typography from "@mui/material/Typography";
 import Sidebar from '../component/Sidebar';
 
 const Menu = () => {

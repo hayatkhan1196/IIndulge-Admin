@@ -7,11 +7,11 @@ import TotalOrder from "../component/charts/TotalOrder";
 import OrderTable from "../component/OrderTable";
 import RecentOrder from "../component/RecentOrder";
 import MonthlyRevenue from "../component/MonthlyRevenue";
-import OrderList from '../component/OrderList'
-import SalesMenuItem from '../component/SalesMenuItem'
-import TestPurpose from '../component/TestPurpose'
-import SalesByHour from '../component/SalesByHour'
-import SalesByDay from '../component/SalesByDay'
+// import OrderList from '../component/OrderList'
+// import SalesMenuItem from '../component/SalesMenuItem'
+// import TestPurpose from '../component/TestPurpose'
+// import SalesByHour from '../component/SalesByHour'
+// import SalesByDay from '../component/SalesByDay'
 
 const Dashboard = () => {
   return (

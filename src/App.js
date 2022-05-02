@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./view/Home";
-import Dashboard from './view/Dashboard';
 import Menu from './view/Menu';
 import Customers from './view/Customers';
 import Order from './view/Order';
@@ -14,8 +13,7 @@ import AllUserList from './component/AllUserList';
 function App() {
   return (
     <div >
-    {/* <Login/> */}
-    {/* <Home/> */}
+    
       <Routes>
       <Route  exact path="/" element={<Login/>}/>
 
@@ -29,11 +27,6 @@ function App() {
         <Route path= "/info"  element={<Info/>} />
       </Route>
       
-       {/* <Route path="/home" element={<Home/>}/>  */}
-      {/* <Route  exact path="/login" element={<Login/>}/> */}
-      {/* <ProtectedRoute path="/home" element={<Home/>} isAuth={true} /> */}
-      
-        {/* <Route path= "/dashboard"  element={<Dashboard/>} /> */}
         
       </Routes>
     </div>

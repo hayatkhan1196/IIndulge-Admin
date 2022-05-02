@@ -13,9 +13,7 @@ import TableRow from "@mui/material/TableRow";
 import { styled } from "@mui/material/styles";
 import Button from '@mui/material/Button';
 import Modal from "@mui/material/Modal";
-import AddProduct from "./AddProduct";
 import Box from "@mui/material/Box";
-import Snackbar from '@mui/material/Snackbar';
 import AllUsersDeatail from './AllUsersDetails';
 
 const style = {

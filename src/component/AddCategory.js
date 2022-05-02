@@ -76,7 +76,7 @@ const AddCategory = () => {
               />
             </Grid>
             <Grid item xs={7} style={{ textAlign: "center" }}>
-              <img src={_image} style={{ width: "100px" }} />
+              <img src={_image} style={{ width: "100px" }} alt="category"/>
             </Grid>
           </Grid>
         </div>

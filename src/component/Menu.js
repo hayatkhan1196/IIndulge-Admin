@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { styled, useTheme ,makeStyles  } from '@mui/material/styles';
+import { styled  } from '@mui/material/styles';
 import MuiDrawer from '@mui/material/Drawer';
 // import Logo1 from '../assets/images/Logo png@2x.png';
 import Divider from '@mui/material/Divider';
@@ -8,15 +8,15 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemButton from '@mui/material/ListItemButton';
 import { Link } from "react-router-dom";
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+// import DashboardIcon from '@mui/icons-material/Dashboard';
+// import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
 import NoteAltIcon from '@mui/icons-material/NoteAlt';
 import InfoIcon from '@mui/icons-material/Info';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
+// import ExpandLess from '@mui/icons-material/ExpandLess';
+// import ExpandMore from '@mui/icons-material/ExpandMore';
 import StarBorder from '@mui/icons-material/StarBorder';
-import Collapse from '@mui/material/Collapse';
+// import Collapse from '@mui/material/Collapse';
 import Typography from "@mui/material/Typography";
 
 import '../style/home.scss'

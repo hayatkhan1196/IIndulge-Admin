@@ -34,7 +34,6 @@ const feedback = [
 ];
 
 const CustomerReview = () => {
-  const [value, setValue] = useState(2);
   return (
     <div>
       {feedback.map((item) => {

@@ -6,7 +6,6 @@ import Noodle from "../assets/images/noodles.jfif";
 import '../style/order.scss';
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-import Stack from '@mui/material/Stack';
 
 const images = [{ url: Pizza }, { url: Burger }, { url: Noodle }];
 

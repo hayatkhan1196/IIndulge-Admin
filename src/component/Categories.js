@@ -16,7 +16,6 @@ import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import Divider from "@mui/material/Divider";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
-import AddProduct from "./AddProduct";
 import AddCategory from './AddCategory';
 import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
